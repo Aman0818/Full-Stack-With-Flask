@@ -7,10 +7,9 @@ Frontend HTML/CSS with navbar, subnav, footer, Main content {Excercise 1} - For 
 ## Installation -
 1. Clone the Repository: - Clone or download the repository from [GitHub](https://github.com/Aman0818/Full-Stack-With-Flask.git).
 2. Install Dependencies: - Make sure you have Python installed. Then install the required Python packages using pip.
+ ``` pip install Flask Flask-Bcrypt python-dotenv functools Pyrebase Pyrebase4 ``` 
 
-``` pip install Flask Flask-Bcrypt python-dotenv functools Pyrebase Pyrebase4 ``` 
-
-3. Run the Application: - Start the Flask server to run the API.
+4. Run the Application: - Start the Flask server to run the API.
 ``` python App.py ```
 
 - The API server will start running locally at `http://127.0.0.1:8000`.
@@ -21,4 +20,5 @@ Frontend HTML/CSS with navbar, subnav, footer, Main content {Excercise 1} - For 
 - Method: `GET, POST` - Endpoint: `/login`
 - Method: `GET, POST` - Endpoint: `/profile`
 - Method: `GET`
-### Demo User - emial ID: `demo@gmail.com` - passwor: `demopass`
+### Demo User - 
+emial ID: `demo@gmail.com` - passwor: `demopass`
