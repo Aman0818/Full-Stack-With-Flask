@@ -5,7 +5,9 @@ This is a simple Flask web application with user authentication using Firebase A
 Frontend HTML/CSS with navbar, subnav, footer, Main content {Excercise 1} - For Backend it using Flask for python server creation { Excercise 2} - Dynamic content showing Date in top {Excercise 3} - User registration with name, phone, email, and password {Exercise 4} - User login and logout functionality - Session-based user authentication - Profile page to display user information {Exercise 5} - No-cache policy implementation for secure sessions
 
 ## Installation -
-1. Clone the Repository: - Clone or download the repository from [GitHub](https://github.com/Aman0818/Full-Stack-With-Flask.git). 2. Install Dependencies: - Make sure you have Python installed. Then install the required Python packages using pip. 
+1. Clone the Repository: - Clone or download the repository from [GitHub](https://github.com/Aman0818/Full-Stack-With-Flask.git).
+2. Install Dependencies: - Make sure you have Python installed. Then install the required Python packages using pip.
+
 ``` pip install Flask Flask-Bcrypt python-dotenv functools Pyrebase Pyrebase4 ``` 
 
 3. Run the Application: - Start the Flask server to run the API.
