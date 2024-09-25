@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    padding-left: 8px;
+}
+.whatsapp{
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed;
+    top: 85vh;
+    left: 2%;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#whatsappimg{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background-color: rgb(1, 1, 1);
+    position: fixed;
+    top: 85vh;
+    left: 92%;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#cartimg{
+    font-size:x-large;
+    color: white;
+    cursor: pointer;
+}
+#cart{
+
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+#cart:hover{
+    color: rgb(255, 106, 50);
+}
+#navbar{
+    width: 100%;
+    position:sticky;
+    top: 0px;
+}
+#nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#top-band{
+    width: 100%;
+    height: 30px;
+    padding-left: 12%;
+    padding-right: 12%;
+    background-color: rgb(229, 239, 240);
+    color: rgb(255, 106, 50);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#bottom-band{
+    width: 100%;
+    height: 35px;
+    background-color: rgb(4, 74, 144);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-logo{
+    width: 150px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+#logo-image{
+    width: 90%;
+    height: 90%;
+}
+#nav-items{
+    width: 850px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-items-menu{
+    width: 100%;
+    height: 100%;
+    color: rgb(79, 79, 79);
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.li{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.gi{
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.gi:hover{
+    color: rgb(255, 106, 50);
+    font-weight: 800;
+}
+.nav-items-submenu{
+    width: 200px;
+    visibility: hidden;
+    font-weight: 100;
+    position: absolute;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.submenu-items{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(229, 239, 240);
+    color: rgb(79, 79, 79);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submenu-items:hover{
+    color:rgb(255, 106, 50) ;
+    background-color: rgb(220, 220, 220);
+    font-weight: 800;
+    cursor: pointer;
+}
+.gi:hover .nav-items-submenu{
+    visibility: visible;
+}
+#nav-icons{
+    width: 150px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#signin{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+#signin:hover{
+    color: rgb(255, 106, 50);
+    
+}
+#signin-element{
+    visibility: hidden;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:absolute;
+    top: 86px;
+    right: 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#signin:hover #signin-element{
+    visibility: visible;
+}
+#signin-element-sub{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(52, 52, 52);
+}
+#signin-element-sub:hover{
+    color:rgb(255, 106, 50) ;
+    background-color: rgb(220, 220, 220);
+    font-weight: 800;
+    cursor: pointer;
+}
+.page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#profile {
+    width: 70%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+#profile-item-edit{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnsub{
+    font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: 5px solid rgb(4, 74, 144);
+    background-color: rgb(4, 74, 144);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    cursor: not-allowed;
+}
+.profile-details {
+    width: 100%;
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-item i {
+    font-size: 20px;
+    color: rgb(4, 74, 144);
+    margin-right: 10px;
+}
+
+.profile-label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #555;
+}
+
+.profile-info {
+    flex-grow: 1;
+    color: #666;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.save-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #218838;
+}
+
+
+#footer{
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-color: rgb(229, 239, 240);
+    display: flex;
+    flex-direction: column;
+}
+#footer-sub1{
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+#footer-sub1-element{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+#footer-sub1-element-heading{
+    color: rgb(25, 25, 25);
+    font-weight:600;
+}
+#footer-sub1-element-child{
+    color: rgb(132, 131, 131);
+    cursor: pointer;
+}
+#footer-sub1-element-child:hover{
+    color: rgb(255, 106, 50);
+}
+#footer-image{
+    width: 95%;
+    height: 40%;
+}
+#footer-sub2{
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer-sub2-element{
+    width: 100%;
+    text-align: center;
+}

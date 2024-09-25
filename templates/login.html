@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% block css %}<link rel="stylesheet" href="/static/css/form.css">{% endblock %}
+{% block title %}Login{% endblock%}
+{% block content %}
+<div class="page">
+    <div id="login">
+        <form id="formlogin" method="post">
+            <div class="formelement">
+                <label for="email">Email ID</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formelement">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="formelement" id="url">
+                <a href="/register"><p id="error">I don't have account</p></a>
+             </div><br>
+            <div class="formelement" style="text-align: center;">
+                <button type="submit" id="btnsub" >Login</button>
+            </div> 
+        </form>
+    </div>
+</div>
+{% endblock %}  

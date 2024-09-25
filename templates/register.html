@@ -1,0 +1,34 @@
+{% extends "index.html" %}
+{% block css %}<link rel="stylesheet" href="/static/css/form.css">{% endblock %}
+{% block title %}Register{% endblock%}
+{% block content %}
+<div class="page">
+    <div id="login">
+        <form id="formlogin"  method="post">
+            <div class="formelement">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="formelement">
+                <label for="phone">Phone</label><br>
+                <input type="number" id="phone" name="phone" required>
+            </div>
+            <div class="formelement">
+                <label for="email">Email ID</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="formelement">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="formelement" id="url">
+               <a href="/login"><p id="error">I have already account</p></a>
+               <a href="#"><p id="error">Terms & Condition</p></a>
+            </div><br>
+            <div class="formelement"  style="text-align: center;">
+                <button type="submit" id="btnsub" >Register</button>
+            </div> 
+        </form>
+    </div>
+</div>
+{% endblock %}  

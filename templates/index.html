@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block css %}<link rel="stylesheet" href="/static/css/style.css">{% endblock %}
+    <title>{% block title %}Home{% endblock%}</title>
+</head>
+<body>
+    <!-- Python Assignment By Aman Mishra -->
+     <!-- emailid:amaniitjeeaspirant@gmail.com -->
+    <div class="whatsapp">
+        <img id="whatsappimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHIEE4eT-T0e5OuArvm8NfZzEN8M6c7REJbw&s" alt="whatsapp">
+    </div>
+    <div class="cart">
+        <i class="fa-solid fa-cart-shopping" id="cartimg"></i>
+    </div>
+    <div id="navbar">
+        <div id="top-band">
+            <div class="top-band-items"><i class="fa-solid fa-phone"></i>+91 12345 xxxxx</div>
+            <div class="top-band-items" style="cursor: pointer;">Today {{date}}</div>
+        </div>
+        <div id="nav">
+            <div id="nav-logo">
+                <img src="/static/images/logo.png" alt="" id="logo-image">
+            </div>
+            <div id="nav-items">
+                <ul id="nav-items-menu">
+                    <li class="gi">
+                        <div class="li">
+                            Fruits
+                            <i class="fa fa-sort-down icon"></i>
+                        </div>
+                        <ul class="nav-items-submenu">
+                            <div class="submenu-items">Apples</div>
+                            <div class="submenu-items">Bananas</div>
+                            <div class="submenu-items">Oranges</div>
+                            <div class="submenu-items">Berries</div>
+                            <div class="submenu-items">Grapes</div>
+                            <div class="submenu-items">Pineapple</div>
+                            <div class="submenu-items">Mangoes</div>
+                        </ul>
+                    </li>
+                    <li class="gi">
+                        <div class="li">
+                            Vegetables
+                            <i class="fa fa-sort-down icon"></i>
+                        </div>
+                        <div class="nav-items-submenu">
+                            <div class="submenu-items">Tomatoes</div>
+                            <div class="submenu-items">Potatoes</div>
+                            <div class="submenu-items">Carrots</div>
+                            <div class="submenu-items">Broccoli</div>
+                            <div class="submenu-items">Spinach</div>
+                            <div class="submenu-items">Bell Peppers</div>
+                            <div class="submenu-items">Onions</div>
+                            <div class="submenu-items">Garlic</div>
+                        </div>
+                    </li>
+                    <li class="gi">
+                        <div class="li">
+                            Organic
+                            <i class="fa fa-sort-down icon"></i>
+                        </div>
+                        <div class="nav-items-submenu">
+                            <div class="submenu-items">Organic Apples</div>
+                            <div class="submenu-items">Organic Carrots</div>
+                            <div class="submenu-items">Organic Kale</div>
+                            <div class="submenu-items">Organic Berries</div>
+                            <div class="submenu-items">Organic Tomatoes</div>
+                        </div>
+                    </li>
+                    <li class="gi">
+                        <div class="li">
+                            Seasonal Specials
+                            <i class="fa fa-sort-down icon"></i>
+                        </div>
+                        <div class="nav-items-submenu">
+                            <div class="submenu-items">Mangoes</div>
+                            <div class="submenu-items">Pumpkins</div>
+                            <div class="submenu-items">Watermelons</div>
+                            <div class="submenu-items">Squash</div>
+                            <div class="submenu-items">Peaches</div>
+                        </div>
+                    </li>
+                    <li class="gi">
+                        <div class="li">
+                            Exotic
+                            <i class="fa fa-sort-down icon"></i>
+                        </div>
+                        <div class="nav-items-submenu">
+                            <div class="submenu-items">Dragon Fruit</div>
+                            <div class="submenu-items">Avocado</div>
+                            <div class="submenu-items">Passion Fruit</div>
+                            <div class="submenu-items">Kiwi</div>
+                            <div class="submenu-items">Starfruit</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>            
+            <div id="nav-icons">
+                <div id="signin" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>{% if user %}{% else %}Sign In{% endif %}
+                    <div id="signin-element">
+                        {% if user %}
+                        <div id="signin-element-sub"  onclick="window.location='/profile'">Profile</div>
+                        <div id="signin-element-sub"  onclick="window.location='/logout'">Logout</div>
+                        
+                        {% else %}
+                        <div id="signin-element-sub"  onclick="window.location='/login'">Login</div>
+                        <div id="signin-element-sub"  onclick="window.location='/register'">Register</div>
+                        {% endif %}
+                    </div>
+                </div>
+                <div id="cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="font-size: 50px;"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-band">🌱 Harvested with Care, Delivered with Love!</div>
+    </div>
+    {% block content%}
+    <div class="page">
+        <img id="banner-image" src="/static/images/banner.png" alt="">
+        <div id="page-item1">
+            <p id="page-item1-heading">Freshness from the farm, straight to your doorstep!</p>
+            <p id="page-item1-para">Our fresh fruits and vegetables bring the quality and nutrition you deserve. We’ve stocked a variety of farm-fresh produce that will enliven your meals and keep you coming back for more</p>
+            <img id="item-bar-image" src="/static/images/features.png" alt="">
+            
+        </div>
+        <div id="page-item2">
+            <p id="page-item2-heading">Fruits By Category</p>
+            <div id="page-item2-gallery">
+                <div class="page-item2-gallery-elements" id="page-item2-gallery-elements1">
+                    <img class="gallery-image1" src="https://images.pexels.com/photos/8995201/pexels-photo-8995201.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                </div>
+                <div class="page-item2-gallery-elements" id="page-item2-gallery-elements2">
+                    <img src="https://images.pexels.com/photos/5945608/pexels-photo-5945608.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="gallery-image2">
+                </div>
+                <div class="page-item2-gallery-elements" id="page-item2-gallery-elements3">
+                    <img src="https://images.pexels.com/photos/4502145/pexels-photo-4502145.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="gallery-image2">
+                </div>
+                <div class="page-item2-gallery-elements" id="page-item2-gallery-elements4">
+                    <img src="https://images.pexels.com/photos/11287049/pexels-photo-11287049.jpeg?auto=compress&cs=tinysrgb&w=600">
+                </div>
+                <div class="page-item2-gallery-elements" id="page-item2-gallery-elements5">
+                    <img src="https://images.pexels.com/photos/5945922/pexels-photo-5945922.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" class="gallery-image2">
+                </div>
+                
+            </div>
+        </div>
+        <div id="page-item3">
+            <p id="page-item2-heading">We're Here For You</p>
+            <p id="low">Everyday | 8am - 11 pm </p>
+            <div id="page-item3-element">
+                <div id="page-item3-subelement">Email
+                    <p>contact@emaiid.com</p>
+                </div>
+                <div id="page-item3-subelement">Call
+                    <p>+91 12345 xxxxx</p>
+                </div>
+                <div id="page-item3-subelement">Social
+                    <p>contact@emailid.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
+    <div id="footer">
+        <div id="footer-sub1">
+            <div id="footer-sub1-element">
+                <img src="/static/images/logo.png" id="footer-image" alt="">
+            </div>
+            <div id="footer-sub1-element">
+                <p id="footer-sub1-element-heading">BEST SELLERS</p>
+                <div id="footer-sub1-element-child">Apples</div>
+                <div id="footer-sub1-element-child">Bananas</div>
+                <div id="footer-sub1-element-child">Oranges</div>
+            </div>
+            <div id="footer-sub1-element">
+                <P id="footer-sub1-element-heading">CATEGORIES</P>
+                <div id="footer-sub1-element-child">Fruits</div>
+                <div id="footer-sub1-element-child">Vegetables</div>
+                <div id="footer-sub1-element-child">Organic</div>
+                <div id="footer-sub1-element-child">Seasonal Specials</div>
+                <div id="footer-sub1-element-child">Exotic</div><br>
+                <P id="footer-sub1-element-heading">OTHERS</P>
+                <div id="footer-sub1-element-child">Refund & Return</div>
+                <div id="footer-sub1-element-child">Shipping Policies</div>
+                <div id="footer-sub1-element-child">Become Retailer</div>
+                <div id="footer-sub1-element-child">Become Franchise</div>
+            </div>
+            <div id="footer-sub1-element">
+                <p>
+                    ABC<br>
+                    XYZ 123D<br>
+                    ABCl Park<br>
+                    IND<br>
+                    WEST BENGAAL<br>
+                    India
+                </p><br>
+                <p id="footer-sub1-element-heading">+9112345 xxxxx <br>contact@emailid.com</p>
+            </div>
+        </div>
+        <div id="footer-sub2">
+            <hr class="footer-sub2-element">
+            <p  class="footer-sub2-element" id="footer-line">2024 ©️ All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>

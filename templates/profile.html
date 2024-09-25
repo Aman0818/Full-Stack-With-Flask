@@ -1,0 +1,36 @@
+{% extends "index.html" %}
+{% block css %}
+<link rel="stylesheet" href="/static/css/profile.css">
+{% endblock %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<div class="page">
+    <div id="profile">
+        <div class="profile-header">
+            <h1>User Profile</h1>
+        </div>
+        <div class="profile-details">
+            <div class="profile-item">
+                <i class="fas fa-user"></i>
+                <span class="profile-label">Name:</span>
+                <span class="profile-info">{{userdata.name}}</span>
+            </div>
+            <div class="profile-item">
+                <i class="fas fa-envelope"></i>
+                <span class="profile-label">Email:</span>
+                <span class="profile-info">{{userdata.email}}</span>
+            </div>
+            <div class="profile-item">
+                <i class="fas fa-phone"></i>
+                <span class="profile-label">Phone:</span>
+                <span class="profile-info">{{userdata.phone}}</span>
+            </div>
+            <div id="profile-item-edit">
+                <button id="btnsub">Edit Profile</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
