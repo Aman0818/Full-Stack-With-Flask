@@ -10,3 +10,4 @@ python-dotenv==1.0.1
 fonttools==4.43.1
 Flask-Bcrypt==1.0.1
 Pyrebase4==4.7.1
+gunicorn==21.2.0
